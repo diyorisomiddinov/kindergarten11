@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <title>News</title>
+</head>
+<body>
+
+<div class="navigation w-100">
+    <div class="container d-flex justify-content-between">
+        <h1 class="logo">
+            LOGO
+        </h1>
+        <nav class="stroke">
+            <ul class="nav_text">
+                <li class="d-inline-block m_3"><a href="Home.html">Home</a></li>
+                <li class="d-inline-block m_3"><a href="gallery.html">Gallery</a></li>
+                <li class="d-inline-block m_3"><a href="news.html" class="active">News</a></li>
+                <li class="d-inline-block m_3"><a href="staff.html">Staff</a></li>
+                <li id="contact_scroll" class="d-inline-block m_3"><a href="Home.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!--NEWS-->
+
+<div class="news-heading text-center p-3 bg-own-light">
+    <h1>All the latest news is here!</h1>
+</div>
+
+<div class="news-page">
+    <div class="color">
+        <div class="container">
+            <div class="news-grid p-3">
+                <div class="news-image">
+                    <img src="photos/gallery/gallery9.jpg" class="w-100">
+                </div>
+                <div class="news-content text-dark p-2">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at consequatur cumque deserunt
+                        ducimus eligendi itaque labore recusandae totam! Ab, architecto beatae commodi cupiditate earum
+                        eos est explicabo magnam minima nihil officiis pariatur quaerat, quia similique sint sit vitae!
+                        Voluptas!</p>
+                    <div>
+                        <a href="#" class="btn btn-outline-own-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color">
+        <div class="container">
+            <div class="news-grid p-3">
+                <div class="news-image">
+                    <img src="photos/gallery/gallery6.jpg" class="w-100">
+                </div>
+                <div class="news-content text-dark p-2">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at consequatur cumque deserunt
+                        ducimus eligendi itaque labore recusandae totam! Ab, architecto beatae commodi cupiditate earum
+                        eos est explicabo magnam minima nihil officiis pariatur quaerat, quia similique sint sit vitae!
+                        Voluptas!</p>
+                    <div>
+                        <a href="#" class="btn btn-outline-own-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="color">
+        <div class="container">
+            <div class="news-grid p-3">
+                <div class="news-image">
+                    <img src="photos/gallery/gallery3.jpg" class="w-100">
+                </div>
+                <div class="news-content text-dark p-2">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at consequatur cumque deserunt
+                        ducimus eligendi itaque labore recusandae totam! Ab, architecto beatae commodi cupiditate earum
+                        eos est explicabo magnam minima nihil officiis pariatur quaerat, quia similique sint sit vitae!
+                        Voluptas!</p>
+                    <div>
+                        <a href="#" class="btn btn-outline-own-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="color">
+        <div class="container">
+            <div class="news-grid p-3">
+                <div class="news-image">
+                    <img src="photos/gallery/gallery5.jpg" class="w-100">
+                </div>
+                <div class="news-content text-dark p-2">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at consequatur cumque deserunt
+                        ducimus eligendi itaque labore recusandae totam! Ab, architecto beatae commodi cupiditate earum
+                        eos est explicabo magnam minima nihil officiis pariatur quaerat, quia similique sint sit vitae!
+                        Voluptas!</p>
+                    <div>
+                        <a href="#" class="btn btn-outline-own-dark">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FOOTER-->
+
+<div class="footer m-2 p-1">
+    <div class="container text-center">
+        <p>Copyright &copy;
+            <span id="year"></span> made by Muhammaddiyor at <a href="#">BA Tech Academy</a>
+        </p>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animatescroll.min.js"></script>
+
+
+<script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+
+    // This is for a number animation in a bar.
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    $('#contact_scroll').on('click', function () {
+        $('#contact').animatescroll({
+            scrollSpeed: 500,
+            easing: 'easeInOutQuad'
+        });
+    });
+
+</script>
+</body>
+</html>
